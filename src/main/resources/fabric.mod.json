@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "mineconomy",
+  "version": "${version}",
+  "name": "Mineconomy",
+  "description": "Economy",
+  "authors": [
+    "Unreal852"
+  ],
+  "contact": {
+    "website": "https://github.com/UnrealMinecraft",
+    "repo": "https://github.com/UnrealMinecraft/Mineconomy"
+  },
+  "license": "MIT",
+  "icon": "",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "fr.unreal852.mineconomy.client.MineconomyClient"
+    ],
+    "main": [
+      "fr.unreal852.mineconomy.Mineconomy"
+    ],
+    "server": [
+      "fr.unreal852.mineconomy.server.MineconomyServer"
+    ]
+  },
+  "mixins": [
+    "mineconomy.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.8",
+    "fabric": "*",
+    "minecraft": "1.19"
+  }
+}
